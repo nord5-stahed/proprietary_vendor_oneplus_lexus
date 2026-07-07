@@ -832,6 +832,7 @@ PRODUCT_PACKAGES += \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
     libubifocus \
+    libui-stock \
     libvideoml \
     libvmfilexfer \
     sensors.qsh \
