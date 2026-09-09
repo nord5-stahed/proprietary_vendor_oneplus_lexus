@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/lexus/proprietary/odm/etc/PanelChaplin/Lut3D_311:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Lut3D_311 \
     vendor/oneplus/lexus/proprietary/odm/etc/PanelChaplin/Lut3D_312:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Lut3D_312 \
     vendor/oneplus/lexus/proprietary/odm/etc/PanelChaplin/panelchaplin:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/panelchaplin \
-    vendor/oneplus/lexus/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
     vendor/oneplus/lexus/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/lexus/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
     vendor/oneplus/lexus/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/workspaceFileXml.qwsp \
@@ -150,6 +149,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/lexus/proprietary/odm/etc/init/init.camera_rfi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_rfi.rc \
     vendor/oneplus/lexus/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
     vendor/oneplus/lexus/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
+    vendor/oneplus/lexus/proprietary/odm/etc/lra_model_0.conf:$(TARGET_COPY_OUT_ODM)/etc/lra_model_0.conf \
     vendor/oneplus/lexus/proprietary/odm/etc/media_cliffs_v0/video_system_specs.json:$(TARGET_COPY_OUT_ODM)/etc/media_cliffs_v0/video_system_specs.json \
     vendor/oneplus/lexus/proprietary/odm/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/lexus/proprietary/odm/etc/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/mixer_paths.xml \
@@ -223,6 +223,37 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/lexus/proprietary/odm/etc/sensor/config/palawan_mtp_pocket.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/palawan_mtp_pocket.json \
     vendor/oneplus/lexus/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
     vendor/oneplus/lexus/proprietary/odm/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F0/WAVE_MMAP.txt:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F0/WAVE_MMAP.txt \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F0/wave_he_short_f0_162_0.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F0/wave_he_short_f0_162_0.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F0/wave_he_short_f0_162_1.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F0/wave_he_short_f0_162_1.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F0/wave_he_short_f0_162_2.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F0/wave_he_short_f0_162_2.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F0/wave_he_short_f0_162_3.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F0/wave_he_short_f0_162_3.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F0/wave_he_short_f0_162_4.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F0/wave_he_short_f0_162_4.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F1/WAVE_MMAP.txt:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F1/WAVE_MMAP.txt \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F1/wave_he_short_f0_166_0.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F1/wave_he_short_f0_166_0.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F1/wave_he_short_f0_166_1.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F1/wave_he_short_f0_166_1.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F1/wave_he_short_f0_166_2.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F1/wave_he_short_f0_166_2.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F1/wave_he_short_f0_166_3.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F1/wave_he_short_f0_166_3.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F1/wave_he_short_f0_166_4.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F1/wave_he_short_f0_166_4.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F2/WAVE_MMAP.txt:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F2/WAVE_MMAP.txt \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F2/wave_he_short_f0_170_0.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F2/wave_he_short_f0_170_0.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F2/wave_he_short_f0_170_1.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F2/wave_he_short_f0_170_1.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F2/wave_he_short_f0_170_2.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F2/wave_he_short_f0_170_2.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F2/wave_he_short_f0_170_3.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F2/wave_he_short_f0_170_3.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F2/wave_he_short_f0_170_4.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F2/wave_he_short_f0_170_4.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F3/WAVE_MMAP.txt:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F3/WAVE_MMAP.txt \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F3/wave_he_short_f0_174_0.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F3/wave_he_short_f0_174_0.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F3/wave_he_short_f0_174_1.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F3/wave_he_short_f0_174_1.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F3/wave_he_short_f0_174_2.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F3/wave_he_short_f0_174_2.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F3/wave_he_short_f0_174_3.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F3/wave_he_short_f0_174_3.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F3/wave_he_short_f0_174_4.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F3/wave_he_short_f0_174_4.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F4/WAVE_MMAP.txt:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F4/WAVE_MMAP.txt \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F4/wave_he_short_f0_178_0.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F4/wave_he_short_f0_178_0.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F4/wave_he_short_f0_178_1.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F4/wave_he_short_f0_178_1.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F4/wave_he_short_f0_178_2.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F4/wave_he_short_f0_178_2.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F4/wave_he_short_f0_178_3.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F4/wave_he_short_f0_178_3.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F4/wave_he_short_f0_178_4.bin:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F4/wave_he_short_f0_178_4.bin \
+    vendor/oneplus/lexus/proprietary/odm/etc/wave_lib/F_MMAP.txt:$(TARGET_COPY_OUT_ODM)/etc/wave_lib/F_MMAP.txt \
     vendor/oneplus/lexus/proprietary/odm/etc/wifi/qca6750/bdwlan.b0e:$(TARGET_COPY_OUT_ODM)/etc/wifi/qca6750/bdwlan.b0e \
     vendor/oneplus/lexus/proprietary/odm/etc/wifi/qca6750/bdwlan.b0i:$(TARGET_COPY_OUT_ODM)/etc/wifi/qca6750/bdwlan.b0i \
     vendor/oneplus/lexus/proprietary/odm/etc/wifi/qca6750/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/qca6750/bdwlan.elf \
@@ -686,7 +717,6 @@ PRODUCT_PACKAGES += \
     libPanelChaplin_vendor \
     libRGBC \
     libSonyIMX471RmscLibrary \
-    libaacvibrator \
     libaidenoiser \
     libaidenoiserv2 \
     libarcsoft_triple_sat \
@@ -791,6 +821,7 @@ PRODUCT_PACKAGES += \
     libsdmutils \
     libsfeShiftExtrapolation \
     libsgutils2 \
+    libsivibrator \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
     libspectre \
